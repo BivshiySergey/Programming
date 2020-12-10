@@ -2,9 +2,10 @@
 #include <cmath>
 #include <vector>
 using namespace std;
+void print_factorization(unsigned int n);
 int main() {
 	vector<int> ar;
-	vector<char> output;
+	vector<string> output;
 	int i;
 	char z = '^';
 	char x = '*';
