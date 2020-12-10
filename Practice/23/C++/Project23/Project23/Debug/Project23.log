@@ -1,0 +1,6 @@
+﻿  23.cpp
+D:\Programming\Practice\23\C++\Project23\Project23\23(3).h(5,18): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Programming\Practice\23\C++\Project23\Project23\23(3).h(5,29): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Programming\Practice\23\C++\Project23\Project23\23(3).h(5,41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Programming\Practice\23\C++\Project23\Project23\23(3).h(6,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  Project23.vcxproj -> D:\Programming\Practice\23\C++\Project23\Debug\Project23.exe
