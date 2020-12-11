@@ -1,0 +1,7 @@
+﻿  28.cpp
+c:\users\oblak\documents\учеба\programming\practice\28\c++\project28\project28\28.cpp(10): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\oblak\documents\учеба\programming\practice\28\c++\project28\project28\28.cpp(19): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\oblak\documents\учеба\programming\practice\28\c++\project28\project28\28.cpp(30): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\oblak\documents\учеба\programming\practice\28\c++\project28\project28\28.cpp(37): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\oblak\documents\учеба\programming\practice\28\c++\project28\project28\28.cpp(40): warning C4018: >: несоответствие типов со знаком и без знака
+  Project28.vcxproj -> C:\Users\oblak\Documents\Учеба\Programming\Practice\28\C++\Project28\Debug\Project28.exe

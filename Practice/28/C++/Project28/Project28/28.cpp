@@ -1,16 +1,11 @@
 #include <iostream>
-#include <cmath>
 #include <vector>
+#include <map>
 using namespace std;
-void print_factorization(unsigned int n);
-int main() {
+void print_factorization(unsigned int n) {
 	vector<int> ar;
-	vector<string> output;
+	map<int, int> cac;
 	int i;
-	char z = '^';
-	char x = '*';
-	int n;
-	cin >> n;
 	int a = 0;
 	for (int k = 2; k < n; k++) {
 		if (n % k != 0) {
@@ -30,16 +25,34 @@ int main() {
 				i++;
 			}
 		}
-		int stepen = 0;
+		ar.push_back(n);
+		int stepen = 1;
 		for (int j = 0; j < ar.size() - 1; j++) {
 			if (ar[j] == ar[j + 1]) {
 				stepen++;
+				cac[ar[j]]++;
 			}
 		}
-		if (stepen == 0) {
-			for (int k = 0; k < ar.size() - 1; k++) {
-				if ()
+		if (stepen == 1) {
+			for (int l = 0; l < ar.size() - 1; l++) {
+				cout << ar[l] << "*";
+		}
+			for (int m = ar.size() - 1; m > ar.size() - 2; m--) {
+				cout << ar[m];
+			}
+		}
+		else { 
+			for (auto now : cac) {
+				cout << now.first << "^" << stepen << " ";
+			}
+			for (int p = ar.size() - stepen ; p > stepen ; p--) {
+				cout << ar[p];
 			}
 		}
 	}
+}
+int main() {
+	unsigned int n;
+	cin >> n;
+	print_factorization(n);
 }
