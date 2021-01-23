@@ -48,8 +48,8 @@ void raw_response(const Request& req, Response& res) {
 		get_w();
 		ftime = findtime(current_time);
 	}
-	string distr = weather["hourly"][nice_time]["weather"][0]["description"];
-	string temp = to_string(int(weather["hourly"][nice_time]["temp"]));
+	string distr = weather["hourly"][ftime]["weather"][0]["description"];
+	string temp = to_string(int(weather["hourly"][ftime]["temp"]));
 	string str = "{\"pogoda\":\"" + distr + "\",\"temp\":" + temp + "}";
 	res.set_content(str, "text/json");
 }
@@ -114,9 +114,9 @@ void gen_response(const Request& req, Response& res) {
 		}
 		file.close();
 
-		string distr = weather["hourly"][nice_time]["weather"][0]["description"];
-		string temp = to_string(int(weather["hourly"][nice_time]["temp"]));
-		string icon = weather["hourly"][nice_time]["weather"][0]["icon"];
+		string distr = weather["hourly"][ftime]["weather"][0]["description"];
+		string temp = to_string(int(weather["hourly"][ftime]["temp"]));
+		string icon = weather["hourly"][ftime]["weather"][0]["icon"];
 		str = trade(str, "{hourly[i].weather[0].description}", distr);
 		str = trade(str, "{hourly[i].weather[0].icon}", icon);
 		str = trade(str, "{hourly[i].temp}", temp);
